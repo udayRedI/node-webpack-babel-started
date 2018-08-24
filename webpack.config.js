@@ -13,6 +13,7 @@ if(DEBUG) {
   }));
 }
 module.exports = {
+  mode: process.env.NODE_ENV,
   entry: './src/main.js',
   target: 'node',
   externals: [nodeExternals()],
@@ -23,15 +24,26 @@ module.exports = {
   optimization: {
     minimize: !DEBUG
   },
+  devtool: "source-map",
   module: {
-    rules: [
+    "rules": [
       {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [
-        	"babel-loader",
-        	"eslint-loader"
-        ]
+        "enforce": "pre",
+        "test": /\.(js|jsx)$/,
+        "exclude": /node_modules/,
+        "use": "eslint-loader"
+      },
+      {
+        "test": /\.js$/,
+        "exclude": /node_modules/,
+        "use": {
+          "loader": "babel-loader",
+          "options": {
+            "presets": [
+              "env"
+            ]
+          }
+        }
       }
     ]
   },

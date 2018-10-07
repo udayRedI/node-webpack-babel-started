@@ -1,4 +1,4 @@
-# Starter boilerplate code to build server-side code with nodeJs, ES6, webpack4, nodemon, babel, jest and supertest.
+# Starter boilerplate code to build server-side code with nodeJs, ES6, webpack4, nodemon, babel, jest, supertest and docker.
 This project can help you bootstrap your server-side codebase.
 I've added basic unit and integration tests to help further.
 
@@ -11,6 +11,7 @@ I've added basic unit and integration tests to help further.
 - webpack4
 	- Webpack Babel loader configuration
 	- Hot module replacement
+- [Docker](https://docs.docker.com/)
 
 <br /><br />
 ## Getting Started

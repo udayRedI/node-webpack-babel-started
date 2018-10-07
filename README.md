@@ -45,16 +45,17 @@ $ npm start
 Webpack watches `/src` folder then compiles using babel and creates a `backend.js` file in `dist` folder, next `nodemon` watches for changes in `dist` folder and restarts server on every change.
 
 
-### If you want to integrate docker
+### Follow below steps to integrate docker
 
-## Install [docker](https://docs.docker.com/)
-## Run `docker stack deploy -c docker-compose.yml webpack-node`
+1. Install [docker](https://docs.docker.com/)
+2. Run `docker stack deploy -c docker-compose.yml webpack-node`
 
 Server will is up.
 
-## Run `docker container ls` to checkout the docker-container infomation which is running.
+### Debug docker container
 
-## Run 'docker exec -it <container-hash> bash' to login and debug server.
+1. Run `docker container ls` to checkout the docker-container infomation which is running.
+2. Run 'docker exec -it <container-hash> bash' to login and debug server.
 
 
 ### Your dev environment is ready! 

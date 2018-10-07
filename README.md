@@ -2,7 +2,7 @@
 This project can help you bootstrap your server-side codebase.
 I've added basic unit and integration tests to help further.
 
-## Features
+## What you get out of the box?
 - [nodeJs](https://nodejs.org/en/)
 - [ES6](http://es6-features.org) (with [babel](https://babeljs.io))
 - [nodemon](https://nodemon.io/)

@@ -49,7 +49,7 @@ Webpack watches `/src` folder then compiles using babel and creates a `backend.j
 ### Follow below steps to integrate docker
 
 1. Install [docker](https://docs.docker.com/)
-2. Run `docker stack deploy -c docker-compose.yml webpack-node`
+2. Run `docker stack deploy -c docker-compose.yml <stack-name>`
 
 Server will is up.
 
@@ -57,6 +57,6 @@ Server will is up.
 
 1. Run `docker container ls` to checkout the docker-container infomation which is running.
 2. Run 'docker exec -it <container-hash> bash' to login and debug server.
-
+3. To stop the stack run `docker stack rm <stack-name>`.
 
 ### Your dev environment is ready! 
